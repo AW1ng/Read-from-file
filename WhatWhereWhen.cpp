@@ -13,19 +13,10 @@ int get_random(int from = 2, int to = 13) {
 }
 
 
-//void SourceData() {
-//	bool check_sector[13];
-//	int Sector[13]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-//	int p_score, ai_score;
-//	for(int i = 0; i <= 13; i++) {
-//		check_sector[i] = true;
-//	}
-//}
-
 
 void Scoreboard(string text, string answer, int &p_score, int &ai_score) {
 	int Line = 1;
-//	create default string
+
 	if(text == answer) {
 		cout <<"The answer is " << text << " your answer is " << answer <<"\nYou are right!\n";
 		p_score += 1;
@@ -96,7 +87,6 @@ int change_sector(int *A, int num, bool *check_sector, int size = 13) {
 		}
 		j++;
 			
-//		if(j == num ) cout << "no free sectors!"; // FIX IT
 	}
 	
 	if(check_sector[j] == true) {
@@ -112,8 +102,8 @@ void Roulette(int *Data, bool *sector) {
 	int num = 0, j = 0, new_sector;
 	int p_score = 0, ai_score = 0;
 	bool check_winner = false;
-	string path_questions = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\uestions.txt";
-	string path_answers = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\nswers.txt";
+	string path_questions = ""; // questions
+	string path_answers = ""; // answers
 	string answer;
 	cout << "To spin press space button\n";
 	while(1){
@@ -160,30 +150,12 @@ int main() {
 		check_sector[i] = true;
 	}
 	
-	string path_questions = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\uestions.txt";
-	string path_answers = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\nswers.txt";
+	string path_questions = "";
+	string path_answers = "";
 	string answer;
 	
 	Roulette(Sector, check_sector);
 
-//	int Size = 0;
-//	int *A = new int[Size];
-	
-//	delete[] A;
 }
 
-
-
-
-
-
-//int change_sector(int *A, int num, int size = 13) {
-//	cout <<"Copy sector: ";
-//	int j, i;
-//	for(i = 0; i < size; i++) {
-//		cout << "A " << A[i] << " NUm = " << num <<' ';
-////		Data[i] = A[i];
-////		cout << "Data[i] " << Data[i] << " A[i]= " << A[i] <<'\n';
-//	}
-//}
 
