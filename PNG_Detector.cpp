@@ -14,9 +14,6 @@ void PNG_detector(string path) {
 		
 		char* buffer = new char[8];
 		picture.read(buffer, sizeof(buffer));
-		
-//		cout << hex <<  reinterpret_cast<char*>(buffer);
-//		HexOut(buffer, 4);
 
 		if(is_png(buffer)) cout << "PNG";
 		else cout << "Not PNG";
