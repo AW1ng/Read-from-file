@@ -40,7 +40,7 @@ void biggest_salary(string path) {
 
 
 int main() {
-	string path = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\statement.txt";
+	string path = "statement.txt";
 
 	biggest_salary(path);
 }
