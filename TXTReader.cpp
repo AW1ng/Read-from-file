@@ -26,6 +26,6 @@ void txt_reader(string path) {
 
 
 int main() {
-	string Path = "C:\\Users\\Alex_dev\\Desktop\\METRO_PROLOG.txt";
+	string Path = ".txt";
 	txt_reader(Path);
 }
