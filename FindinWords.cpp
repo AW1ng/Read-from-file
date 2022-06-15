@@ -27,7 +27,7 @@ int word_seeker(string path, string word) {
 
 
 int main() {
-	string Path = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\words.txt"; // put path here
+	string Path = "words.txt"; // put path here
 	cout << word_seeker(Path, "tiger");
 }
 
